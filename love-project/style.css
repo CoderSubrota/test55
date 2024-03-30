@@ -1,0 +1,41 @@
+body{
+    overflow: hidden;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+.loveBody{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    filter: brightness(1.5);
+    font-family: serif;
+}
+.loveText{padding-top: 200px;}
+
+.i{ color: lime;}
+.love{color: red;}
+.you{color: white;}
+
+.phoneNumber{color: darkblue; animation: phoneNumber 0.5s linear infinite;}
+@keyframes phoneNumber {
+    0%{color: yellow;}
+    100%{color: cyan;}
+}
+
+.circle{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgba(0, 255, 255, 0.5),rgba(0, 0, 139, 0.5),lime);
+    pointer-events: none;
+    margin: 10px;
+    animation: spananimate 3s linear infinite;
+}
+@keyframes spananimate {
+    0%{transform: translate(-50% -50%); opacity: 1;}
+    100%{transform: translate(-40%,-80%); opacity: 0;}
+}
